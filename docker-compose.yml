@@ -1,0 +1,13 @@
+version: "3"
+services:
+    vegastrike-dev:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        labels:
+            description: "Vegastrike Build Environment - Ubuntu 16.10"
+            version: "1.0"
+        user: vegastrikedev
+        working_dir: /home/vegastrikedev
+        volumes:
+            - .:/home/vegastrikedev
