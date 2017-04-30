@@ -10,7 +10,7 @@ RUN apt-get -y install python-dev build-essential automake autoconf
 RUN apt-get -y install libpng16-16 libpng-dev libpng-tools libjpeg62-dev
 RUN apt-get -y install libexpat1-dev libgtk2.0-dev
 RUN apt-get -y install libopenal-dev libogg-dev libvorbis-dev libgl1-mesa-dev libsdl1.2-dev
-RUN apt-get -y install ffmpeg libavcodec-dev libavcodec-extra
+RUN apt-get -y install ffmpeg libavcodec-dev libavcodec-extra libavformat-dev libavresample-dev libavutil-dev libavdevice-dev libpostproc-dev
 RUN apt-get -y install freeglut3-dev libxmu-dev libxi-dev
 RUN apt-get -y install libogre-1.9-dev libogre-1.9.0v5 ogre-1.9-tools
 RUN /usr/sbin/useradd -m -u 1001 -U vegastrikedev

@@ -37,5 +37,9 @@ pushd "${VEGASTRIKE_SETUP_DIR}"
 
 pushd "${VEGASTRIKE_APP_DIR}"
 	cmake "${VEGASTRIKE_DIR}/vegastrike"
-	make
+	# Mesh LOD not compatible with libogre 1.9
+	# work around is to specify the make target
+	# instead of the generic `all` target
+	# https://sourceforge.net/p/vegastrike/bugs/679/
+	make vegastrike
 # popd
